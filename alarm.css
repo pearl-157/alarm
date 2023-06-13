@@ -1,0 +1,84 @@
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #333;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(to bottom, #FFAFBD, #FFC3A0, #FFDAB9);
+    }
+
+    .container {
+      background-color: #F8F8F8;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    #alarmTime {
+      margin-top: 20px;
+      font-size: 24px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button:hover {
+      background-color: #e53935;
+    }
+
+    p#status {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .alarm-text {
+      color: #FF6B8A;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Responsive Styles */
+
+    @media (max-width: 600px) {
+      .container {
+        max-width: 90%;
+      }
+}
